@@ -204,7 +204,8 @@ scripts/compress/
 ├── eval_quality.py           量化前后：KL / top-1 一致率 / 生成答案一致率
 ├── prune_structured.py       结构化剪枝：丢层（LLM/视觉）+ FFN 宽度（激活感知判据）
 ├── diag_prune.py             剪枝异常时的诊断（真实 traceback + 各层 config 实际取值）
-└── verify_pruned_ckpt.py     checkpoint 逐 key 校验（排除"存盘存坏了"这一类原因）
+├── verify_pruned_ckpt.py     checkpoint 逐 key 校验（排除"存盘存坏了"这一类原因）
+└── desensitize_results.py    结果脱敏：本机绝对路径 → 占位符（先解析 JSON 再处理字符串）
 
 results/compress_*.json|txt   上述每一步的实测输出
 ```
@@ -314,10 +315,6 @@ $py='<VENV>\Scripts\python.exe'; $c='<REPO>\scripts\compress'
 ```
 
 ⚠️ 同一时刻只跑一个 CUDA 进程。所有 KL / 一致率都是**与自己的 bf16 原版比**，不是榜单准确率（见 §一 表下注）。
-
-> 附：`scripts/compress/upload_release.ps1`（+ `.cmd`）是当时为发布模型写的**挂机上传脚本**——
-> 断点续传、逐文件重试、**卡死检测**（连续 N 分钟无读盘进展即掐掉重来）、阻止休眠。
-> 这次没用上（模型不发），但以后要发大文件仍然能用。
 
 **来源与许可**：全部数字来自 `microsoft/Mage-VL`（**Apache-2.0**）；派生产物遵循同一许可，
 请一并遵守其模型卡条款并保留署名。
