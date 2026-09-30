@@ -1,0 +1,200 @@
+{
+  "tag": "pruneL30_ffn75",
+  "llm_drop": 6,
+  "vision_drop": 0,
+  "strategy": "uniform",
+  "ffn_keep": 0.75,
+  "started": "2026-09-30 18:24:00",
+  "load_sec": 7.2,
+  "params_before": 4741793792,
+  "gpu_before_gb": 8.833,
+  "llm_prune": {
+    "n_before": 36,
+    "n_after": 30,
+    "dropped": [
+      5,
+      10,
+      15,
+      21,
+      26,
+      31
+    ],
+    "strategy": "uniform"
+  },
+  "ffn": {
+    "keep_ratio": 0.75,
+    "I_before": 9728,
+    "I_after": 7296,
+    "n_layers_pruned": 30
+  },
+  "prune_sec": 0.1,
+  "params_after": 3575876096,
+  "param_ratio": 0.7541,
+  "gpu_after_gb": 6.661,
+  "items": [
+    {
+      "kind": "text",
+      "prompt": "What is the capital of France? Answer with the city name only.",
+      "image": null,
+      "max_new_tokens": 64,
+      "error": "IndexError: list index out of range",
+      "answer": null,
+      "id": "text00"
+    },
+    {
+      "kind": "text",
+      "prompt": "List five common household objects, one per line.",
+      "image": null,
+      "max_new_tokens": 64,
+      "error": "IndexError: list index out of range",
+      "answer": null,
+      "id": "text01"
+    },
+    {
+      "kind": "text",
+      "prompt": "Explain in three sentences why the sky is blue.",
+      "image": null,
+      "max_new_tokens": 64,
+      "error": "IndexError: list index out of range",
+      "answer": null,
+      "id": "text02"
+    },
+    {
+      "kind": "text",
+      "prompt": "What is 17 * 23? Answer with the number only.",
+      "image": null,
+      "max_new_tokens": 64,
+      "error": "IndexError: list index out of range",
+      "answer": null,
+      "id": "text03"
+    },
+    {
+      "kind": "text",
+      "prompt": "Write a short paragraph describing a rainy afternoon.",
+      "image": null,
+      "max_new_tokens": 64,
+      "error": "IndexError: list index out of range",
+      "answer": null,
+      "id": "text04"
+    },
+    {
+      "kind": "text",
+      "prompt": "Name three differences between a cat and a dog.",
+      "image": null,
+      "max_new_tokens": 64,
+      "error": "IndexError: list index out of range",
+      "answer": null,
+      "id": "text05"
+    },
+    {
+      "kind": "text",
+      "prompt": "In one sentence, explain what model quantization means in machine learning.",
+      "image": null,
+      "max_new_tokens": 64,
+      "error": "IndexError: list index out of range",
+      "answer": null,
+      "id": "text06"
+    },
+    {
+      "kind": "text",
+      "prompt": "Translate 'good morning' into Chinese, Japanese, and French.",
+      "image": null,
+      "max_new_tokens": 64,
+      "error": "IndexError: list index out of range",
+      "answer": null,
+      "id": "text07"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe this image in detail.",
+      "image": "<PIL.Image.Image image mode=RGB size=1024x2048 at 0x1FB8A8EFEF0>",
+      "max_new_tokens": 64,
+      "error": "IndexError: list index out of range",
+      "answer": null,
+      "id": "img00"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe what is happening in this image in one sentence.",
+      "image": "<PIL.Image.Image image mode=RGB size=960x540 at 0x1FB8721AB70>",
+      "max_new_tokens": 64,
+      "error": "IndexError: list index out of range",
+      "answer": null,
+      "id": "img01"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe what is happening in this image in one sentence.",
+      "image": "<PIL.Image.Image image mode=RGB size=960x540 at 0x1FB872F1190>",
+      "max_new_tokens": 64,
+      "error": "IndexError: list index out of range",
+      "answer": null,
+      "id": "img02"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe what is happening in this image in one sentence.",
+      "image": "<PIL.Image.Image image mode=RGB size=960x540 at 0x1FB87111820>",
+      "max_new_tokens": 64,
+      "error": "IndexError: list index out of range",
+      "answer": null,
+      "id": "img03"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe what is happening in this image in one sentence.",
+      "image": "<PIL.Image.Image image mode=RGB size=960x540 at 0x1FB8ED7A7E0>",
+      "max_new_tokens": 64,
+      "error": "IndexError: list index out of range",
+      "answer": null,
+      "id": "img04"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe what is happening in this image in one sentence.",
+      "image": "<PIL.Image.Image image mode=RGB size=960x540 at 0x1FB8AF140E0>",
+      "max_new_tokens": 64,
+      "error": "IndexError: list index out of range",
+      "answer": null,
+      "id": "img05"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe what is happening in this image in one sentence.",
+      "image": "<PIL.Image.Image image mode=RGB size=960x540 at 0x1FBFFD48770>",
+      "max_new_tokens": 64,
+      "error": "IndexError: list index out of range",
+      "answer": null,
+      "id": "img06"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe what is happening in this image in one sentence.",
+      "image": "<PIL.Image.Image image mode=RGB size=960x540 at 0x1FB8ED36570>",
+      "max_new_tokens": 64,
+      "error": "IndexError: list index out of range",
+      "answer": null,
+      "id": "img07"
+    }
+  ],
+  "summary": {
+    "n_ok": 0,
+    "n_err": 16,
+    "mean_tok_per_s": 0.0,
+    "max_peak_allocated_gb": null
+  },
+  "saved": {
+    "dir": "<ASSETS>/compress\\pruneL30_ffn75",
+    "bytes": 7167950151,
+    "gib": 6.676
+  },
+  "reload_check": {
+    "load_sec": 6.1,
+    "params": 3575876096,
+    "params_match": true,
+    "answer": "no, not the to the. .y.16437.pf.1.Two-16...yf14th.16467$.16467$o program",
+    "error": null,
+    "gen_sec": 5.518
+  },
+  "finished": "2026-09-30 18:25:22"
+}

@@ -1,0 +1,302 @@
+{
+  "tag": "bf16",
+  "quant": "none",
+  "max_pixels": null,
+  "max_new_tokens": 64,
+  "started": "2026-09-30 18:12:56",
+  "load_sec": 7.2,
+  "mem_after_load": {
+    "allocated_gb": 8.833,
+    "reserved_gb": 8.834,
+    "peak_allocated_gb": 8.833,
+    "peak_reserved_gb": 8.834,
+    "total_gb": 15.902
+  },
+  "census": {
+    "module_types_top": [
+      [
+        "Linear",
+        351
+      ],
+      [
+        "Qwen3RMSNorm",
+        145
+      ],
+      [
+        "LayerNorm",
+        50
+      ],
+      [
+        "Qwen3DecoderLayer",
+        36
+      ],
+      [
+        "Qwen3Attention",
+        36
+      ],
+      [
+        "Qwen3MLP",
+        36
+      ],
+      [
+        "SiLUActivation",
+        36
+      ],
+      [
+        "MageVLVisionEncoderLayer",
+        24
+      ],
+      [
+        "MageVLVisionAttention",
+        24
+      ],
+      [
+        "SiglipMLP",
+        24
+      ]
+    ],
+    "n_linear_plain": 351,
+    "n_linear4bit": 0,
+    "n_linear8bit": 0,
+    "n_params": 4741793792
+  },
+  "disk": {
+    "source_weights_bytes": 9483675888
+  },
+  "items": [
+    {
+      "kind": "text",
+      "prompt": "What is the capital of France? Answer with the city name only.",
+      "image": null,
+      "max_new_tokens": 64,
+      "prompt_tokens": 33,
+      "new_tokens": 2,
+      "gen_sec": 0.707,
+      "tok_per_s": 2.829,
+      "peak_allocated_gb": 8.849,
+      "answer": "Paris",
+      "id": "text00",
+      "source": null
+    },
+    {
+      "kind": "text",
+      "prompt": "List five common household objects, one per line.",
+      "image": null,
+      "max_new_tokens": 64,
+      "prompt_tokens": 29,
+      "new_tokens": 24,
+      "gen_sec": 2.048,
+      "tok_per_s": 11.721,
+      "peak_allocated_gb": 8.852,
+      "answer": "1. Refrigerator\n2. Television\n3. Washing machine\n4. Dishwasher\n5. Vacuum cleaner",
+      "id": "text01",
+      "source": null
+    },
+    {
+      "kind": "text",
+      "prompt": "Explain in three sentences why the sky is blue.",
+      "image": null,
+      "max_new_tokens": 64,
+      "prompt_tokens": 30,
+      "new_tokens": 64,
+      "gen_sec": 5.332,
+      "tok_per_s": 12.003,
+      "peak_allocated_gb": 8.859,
+      "answer": "The sky appears blue because of a phenomenon called Rayleigh scattering. When sunlight enters the Earth's atmosphere, it collides with molecules and small particles in the air. Blue light is scattered in all directions by the gases and particles in the atmosphere more than other colors because the shorter the wavelength, the more the light is scattered",
+      "id": "text02",
+      "source": null
+    },
+    {
+      "kind": "text",
+      "prompt": "What is 17 * 23? Answer with the number only.",
+      "image": null,
+      "max_new_tokens": 64,
+      "prompt_tokens": 35,
+      "new_tokens": 4,
+      "gen_sec": 0.341,
+      "tok_per_s": 11.741,
+      "peak_allocated_gb": 8.85,
+      "answer": "391",
+      "id": "text03",
+      "source": null
+    },
+    {
+      "kind": "text",
+      "prompt": "Write a short paragraph describing a rainy afternoon.",
+      "image": null,
+      "max_new_tokens": 64,
+      "prompt_tokens": 28,
+      "new_tokens": 64,
+      "gen_sec": 5.25,
+      "tok_per_s": 12.19,
+      "peak_allocated_gb": 8.859,
+      "answer": "A rainy afternoon is a time of tranquility and peace. The sound of raindrops hitting the ground creates a soothing melody that calms the mind and soul. The air is filled with the scent of wet earth and the sound of raindrops on the leaves of trees. The sky is a deep shade of blue, and",
+      "id": "text04",
+      "source": null
+    },
+    {
+      "kind": "text",
+      "prompt": "Name three differences between a cat and a dog.",
+      "image": null,
+      "max_new_tokens": 64,
+      "prompt_tokens": 29,
+      "new_tokens": 64,
+      "gen_sec": 5.179,
+      "tok_per_s": 12.356,
+      "peak_allocated_gb": 8.859,
+      "answer": "1. Cats are generally more independent and solitary than dogs, while dogs are more social and require more attention and interaction from their owners.\n2. Cats are typically more agile and have a higher jumping ability than dogs, while dogs are generally more powerful and have a greater ability to run and play.\n3. Cats are generally",
+      "id": "text05",
+      "source": null
+    },
+    {
+      "kind": "text",
+      "prompt": "In one sentence, explain what model quantization means in machine learning.",
+      "image": null,
+      "max_new_tokens": 64,
+      "prompt_tokens": 33,
+      "new_tokens": 31,
+      "gen_sec": 2.446,
+      "tok_per_s": 12.674,
+      "peak_allocated_gb": 8.854,
+      "answer": "Model quantization is the process of reducing the precision of the weights and activations in a machine learning model to decrease its size and improve its inference speed.",
+      "id": "text06",
+      "source": null
+    },
+    {
+      "kind": "text",
+      "prompt": "Translate 'good morning' into Chinese, Japanese, and French.",
+      "image": null,
+      "max_new_tokens": 64,
+      "prompt_tokens": 32,
+      "new_tokens": 39,
+      "gen_sec": 3.244,
+      "tok_per_s": 12.024,
+      "peak_allocated_gb": 8.855,
+      "answer": "Chinese: 好的早上 (hǎo de zǎo shàng)\nJapanese: おはようございます (ohayō gozaimasu)\nFrench: Bonjour",
+      "id": "text07",
+      "source": null
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe this image in detail.",
+      "image": "<PIL.Image.Image image mode=RGB size=1024x2048 at 0x17EFD303D70>",
+      "max_new_tokens": 64,
+      "prompt_tokens": 2075,
+      "new_tokens": 64,
+      "gen_sec": 8.394,
+      "tok_per_s": 7.625,
+      "peak_allocated_gb": 10.51,
+      "answer": "The image depicts a dog sitting on a patterned rug. The dog appears to be a Border Collie, characterized by its thick, fluffy coat with a mix of white, black, and brown fur. The dog's ears are perked up, and it is looking directly at the camera with a calm and attentive expression",
+      "id": "img00",
+      "source": "dog.jpg"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe what is happening in this image in one sentence.",
+      "image": "<PIL.Image.Image image mode=RGB size=960x540 at 0x17E94CF82C0>",
+      "max_new_tokens": 64,
+      "prompt_tokens": 542,
+      "new_tokens": 10,
+      "gen_sec": 0.971,
+      "tok_per_s": 10.294,
+      "peak_allocated_gb": 9.065,
+      "answer": "A man is holding a microphone and talking.",
+      "id": "img01",
+      "source": "soccer-broadcast.mp4"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe what is happening in this image in one sentence.",
+      "image": "<PIL.Image.Image image mode=RGB size=960x540 at 0x17EFAAD1940>",
+      "max_new_tokens": 64,
+      "prompt_tokens": 542,
+      "new_tokens": 30,
+      "gen_sec": 2.572,
+      "tok_per_s": 11.664,
+      "peak_allocated_gb": 9.065,
+      "answer": "A man holding a microphone with the BBC logo on it, standing in front of a stadium with a scoreboard showing the score of a football match.",
+      "id": "img02",
+      "source": "soccer-broadcast.mp4"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe what is happening in this image in one sentence.",
+      "image": "<PIL.Image.Image image mode=RGB size=960x540 at 0x17E94CE9F10>",
+      "max_new_tokens": 64,
+      "prompt_tokens": 542,
+      "new_tokens": 10,
+      "gen_sec": 0.98,
+      "tok_per_s": 10.199,
+      "peak_allocated_gb": 9.065,
+      "answer": "A man is holding a microphone and talking.",
+      "id": "img03",
+      "source": "soccer-broadcast.mp4"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe what is happening in this image in one sentence.",
+      "image": "<PIL.Image.Image image mode=RGB size=960x540 at 0x17E94CE82F0>",
+      "max_new_tokens": 64,
+      "prompt_tokens": 542,
+      "new_tokens": 22,
+      "gen_sec": 1.863,
+      "tok_per_s": 11.806,
+      "peak_allocated_gb": 9.065,
+      "answer": "Four men are standing around a table with papers and microphones, with a football stadium in the background.",
+      "id": "img04",
+      "source": "soccer-broadcast.mp4"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe what is happening in this image in one sentence.",
+      "image": "<PIL.Image.Image image mode=RGB size=960x540 at 0x17E94CC0A10>",
+      "max_new_tokens": 64,
+      "prompt_tokens": 542,
+      "new_tokens": 22,
+      "gen_sec": 1.928,
+      "tok_per_s": 11.408,
+      "peak_allocated_gb": 9.065,
+      "answer": "Four men are standing around a table with papers and microphones, with a football stadium in the background.",
+      "id": "img05",
+      "source": "soccer-broadcast.mp4"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe what is happening in this image in one sentence.",
+      "image": "<PIL.Image.Image image mode=RGB size=960x540 at 0x17EFA9EA570>",
+      "max_new_tokens": 64,
+      "prompt_tokens": 542,
+      "new_tokens": 10,
+      "gen_sec": 0.973,
+      "tok_per_s": 10.277,
+      "peak_allocated_gb": 9.065,
+      "answer": "A man is holding a microphone and talking.",
+      "id": "img06",
+      "source": "soccer-broadcast.mp4"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe what is happening in this image in one sentence.",
+      "image": "<PIL.Image.Image image mode=RGB size=960x540 at 0x17E94CD0C80>",
+      "max_new_tokens": 64,
+      "prompt_tokens": 542,
+      "new_tokens": 10,
+      "gen_sec": 0.99,
+      "tok_per_s": 10.101,
+      "peak_allocated_gb": 9.065,
+      "answer": "A man is holding a microphone and talking.",
+      "id": "img07",
+      "source": "soccer-broadcast.mp4"
+    }
+  ],
+  "summary": {
+    "n_items": 16,
+    "n_ok": 16,
+    "n_err": 0,
+    "mean_tok_per_s": 10.682,
+    "max_peak_allocated_gb": 10.51,
+    "total_gen_sec": 43.2,
+    "errors": []
+  },
+  "finished": "2026-09-30 18:13:53"
+}

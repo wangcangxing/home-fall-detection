@@ -1,0 +1,86 @@
+{
+  "tag": "ab_ffn_wanda",
+  "llm_drop": 0,
+  "vision_drop": 0,
+  "strategy": "uniform",
+  "ffn_keep": 0.75,
+  "ffn_strategy": "wanda",
+  "started": "2026-09-30 18:31:53",
+  "load_sec": 7.6,
+  "params_before": 4741793792,
+  "gpu_before_gb": 8.833,
+  "calib": {
+    "n_prompts": 8,
+    "sec": 1.4,
+    "prompts": [
+      "Summarize the following idea in one sentence: a small sensor wakes up a bigger model.",
+      "Name two advantages of running a neural network on a low-power chip.",
+      "What is the difference between a photograph and a video?",
+      "Write one sentence about how a camera stores images.",
+      "Give three examples of everyday objects made of metal.",
+      "Explain what a battery does, in one sentence.",
+      "List four colours in the order they appear in a rainbow.",
+      "Describe the taste of a lemon in one short sentence."
+    ]
+  },
+  "ffn": {
+    "keep_ratio": 0.75,
+    "strategy": "wanda",
+    "seed": 0,
+    "I_before": 9728,
+    "I_after": 7296,
+    "n_layers_pruned": 36
+  },
+  "prune_sec": 1.6,
+  "params_after": 4069394432,
+  "param_ratio": 0.8582,
+  "gpu_after_gb": 7.589,
+  "items": [
+    {
+      "kind": "text",
+      "prompt": "What is the capital of France? Answer with the city name only.",
+      "image": null,
+      "max_new_tokens": 32,
+      "prompt_tokens": 33,
+      "new_tokens": 2,
+      "gen_sec": 0.255,
+      "tok_per_s": 7.835,
+      "peak_allocated_gb": 7.598,
+      "answer": "Paris",
+      "id": "text00"
+    },
+    {
+      "kind": "text",
+      "prompt": "Explain in three sentences why the sky is blue.",
+      "image": null,
+      "max_new_tokens": 32,
+      "prompt_tokens": 30,
+      "new_tokens": 32,
+      "gen_sec": 2.86,
+      "tok_per_s": 11.19,
+      "peak_allocated_gb": 7.602,
+      "answer": "The sky is blue because of the way light is scattered by the Earth's atmosphere. When sunlight hits the atmosphere, it is split into different colors, and the",
+      "id": "text02"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe this image in detail.",
+      "image": "<PIL.Image.Image image mode=RGB size=1024x2048 at 0x15CFB3FD160>",
+      "max_new_tokens": 32,
+      "prompt_tokens": 2075,
+      "new_tokens": 32,
+      "gen_sec": 4.602,
+      "tok_per_s": 6.954,
+      "peak_allocated_gb": 9.259,
+      "answer": "The image shows a dog with its front paws spread apart, and its head up, looking towards the camera. The dog's ears are spread apart, and",
+      "id": "img00"
+    }
+  ],
+  "summary": {
+    "n_ok": 3,
+    "n_err": 0,
+    "mean_tok_per_s": 8.66,
+    "max_peak_allocated_gb": 9.259
+  },
+  "finished": "2026-09-30 18:32:13"
+}

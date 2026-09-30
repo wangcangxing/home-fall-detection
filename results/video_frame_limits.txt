@@ -1,0 +1,5 @@
+frames= 2 OK   prompt_tokens=  1059 peak_alloc= 9.40GB peak_reserved= 9.53GB gen=  4.1s | The video begins with a man in a black polo shirt holding a yellow mic
+frames= 4 OK   prompt_tokens=  2095 peak_alloc=10.54GB peak_reserved=10.85GB gen=  5.4s | The video begins with a man in a black shirt holding a yellow micropho
+frames= 8 OK   prompt_tokens=  4167 peak_alloc=14.56GB peak_reserved=15.14GB gen= 17.9s | The video features a sports broadcast, likely from a soccer match, as 
+frames=16 OOM  prompt_tokens=n/a  CUDA out of memory. Tried to allocate 2.06 GiB. GPU 0 has a total capacity of 15.90 GiB of which 0 bytes is fr
+frames=32 OOM  prompt_tokens=n/a  CUDA out of memory. Tried to allocate 32.93 GiB. GPU 0 has a total capacity of 15.90 GiB of which 937.02 MiB i

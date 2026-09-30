@@ -1,0 +1,193 @@
+{
+  "tag": "int4_g32",
+  "bits": 4,
+  "group_size": 32,
+  "skip": [
+    "lm_head"
+  ],
+  "n_cont": 48,
+  "continuation": " This description is written in plain English. It lists the main objects that can be seen in the picture, together with their colours, their approximate positions, and any obvious action taking place. The tone is factual, no numbers are invented, and uncertain details are left out rather than guessed.",
+  "base_model": "<ASSETS>/Mage-VL",
+  "quant_model": "<ASSETS>/Mage-VL",
+  "quant_embed": false,
+  "quant_layers": 350,
+  "quant_storage_bytes": 2477061120,
+  "items": [
+    "text00",
+    "text01",
+    "text02",
+    "text03",
+    "text04",
+    "text05",
+    "text06",
+    "text07",
+    "img00",
+    "img01",
+    "img02",
+    "img03",
+    "img04",
+    "img05",
+    "img06",
+    "img07"
+  ],
+  "comparison": {
+    "n": 16,
+    "mean_kl": 0.04926,
+    "max_kl": 0.05615,
+    "mean_top1_agree": 0.8685,
+    "answer_exact_rate": 0.1875,
+    "mean_answer_ratio": 0.7194,
+    "rows": [
+      {
+        "i": 0,
+        "kl": 0.04535,
+        "top1_agree": 0.8125,
+        "answer_exact": true,
+        "answer_ratio": 1.0
+      },
+      {
+        "i": 1,
+        "kl": 0.043,
+        "top1_agree": 0.8958,
+        "answer_exact": false,
+        "answer_ratio": 0.8
+      },
+      {
+        "i": 2,
+        "kl": 0.04745,
+        "top1_agree": 0.8333,
+        "answer_exact": false,
+        "answer_ratio": 0.1062
+      },
+      {
+        "i": 3,
+        "kl": 0.05024,
+        "top1_agree": 0.8542,
+        "answer_exact": true,
+        "answer_ratio": 1.0
+      },
+      {
+        "i": 4,
+        "kl": 0.05123,
+        "top1_agree": 0.8542,
+        "answer_exact": false,
+        "answer_ratio": 0.2504
+      },
+      {
+        "i": 5,
+        "kl": 0.04538,
+        "top1_agree": 0.875,
+        "answer_exact": false,
+        "answer_ratio": 0.4946
+      },
+      {
+        "i": 6,
+        "kl": 0.04575,
+        "top1_agree": 0.8333,
+        "answer_exact": false,
+        "answer_ratio": 0.9595
+      },
+      {
+        "i": 7,
+        "kl": 0.04443,
+        "top1_agree": 0.9167,
+        "answer_exact": false,
+        "answer_ratio": 0.9341
+      },
+      {
+        "i": 8,
+        "kl": 0.04834,
+        "top1_agree": 0.8333,
+        "answer_exact": false,
+        "answer_ratio": 0.2202
+      },
+      {
+        "i": 9,
+        "kl": 0.05258,
+        "top1_agree": 0.9375,
+        "answer_exact": false,
+        "answer_ratio": 0.8602
+      },
+      {
+        "i": 10,
+        "kl": 0.05117,
+        "top1_agree": 0.9167,
+        "answer_exact": false,
+        "answer_ratio": 0.4211
+      },
+      {
+        "i": 11,
+        "kl": 0.05044,
+        "top1_agree": 0.8542,
+        "answer_exact": false,
+        "answer_ratio": 0.8081
+      },
+      {
+        "i": 12,
+        "kl": 0.05615,
+        "top1_agree": 0.8125,
+        "answer_exact": false,
+        "answer_ratio": 0.8981
+      },
+      {
+        "i": 13,
+        "kl": 0.05389,
+        "top1_agree": 0.875,
+        "answer_exact": false,
+        "answer_ratio": 0.8981
+      },
+      {
+        "i": 14,
+        "kl": 0.05172,
+        "top1_agree": 0.8958,
+        "answer_exact": true,
+        "answer_ratio": 1.0
+      },
+      {
+        "i": 15,
+        "kl": 0.05103,
+        "top1_agree": 0.8958,
+        "answer_exact": false,
+        "answer_ratio": 0.8602
+      }
+    ]
+  },
+  "base_answers": [
+    "Paris",
+    "1. Refrigerator\n2. Television\n3. Washing machine\n4. Dishwasher\n5. Vacuum cleaner",
+    "The sky appears blue because of a phenomenon called Rayleigh scattering. When sunlight enters the Earth's atmosphere, it collides with molecules and small particles in the air. Blue light is scattered in all directions by the gases and particles in the atmosphere more than other colors because the shorter the wavelength, the more the light is scattered",
+    "391",
+    "A rainy afternoon is a time of tranquility and peace. The sound of raindrops hitting the ground creates a soothing melody that calms the mind and soul. The air is filled with the scent of wet earth and the sound of raindrops on the leaves of trees. The sky is a deep shade of blue, and",
+    "1. Cats are generally more independent and solitary than dogs, while dogs are more social and require more attention and interaction from their owners.\n2. Cats are typically more agile and have a higher jumping ability than dogs, while dogs are generally more powerful and have a greater ability to run and play.\n3. Cats are generally",
+    "Model quantization is the process of reducing the precision of the weights and activations in a machine learning model to decrease its size and improve its inference speed.",
+    "Chinese: 好的早上 (hǎo de zǎo shàng)\nJapanese: おはようございます (ohayō gozaimasu)\nFrench: Bonjour",
+    "The image depicts a dog sitting on a patterned rug. The dog appears to be a Border Collie, characterized by its thick, fluffy coat with a mix of white, black, and brown fur. The dog's ears are perked up, and it is looking directly at the camera with a calm and attentive expression",
+    "A man is holding a microphone and talking.",
+    "A man holding a microphone with the BBC logo on it, standing in front of a stadium with a scoreboard showing the score of a football match.",
+    "A man is holding a microphone and talking.",
+    "Four men are standing around a table with papers and microphones, with a football stadium in the background.",
+    "Four men are standing around a table with papers and microphones, with a football stadium in the background.",
+    "A man is holding a microphone and talking.",
+    "A man is holding a microphone and talking."
+  ],
+  "quant_answers": [
+    "Paris",
+    "1. Refrigerator\n2. Television\n3. Washing machine\n4. Microwave\n5. Dishwasher",
+    "The sky appears blue because the Earth's atmosphere scatters sunlight in all directions. Sunlight is made up of different colors, each with its own wavelength. The blue color of the sky is due to the fact that the shorter wavelengths of blue light are scattered more than the other colors, making it more visible to our eyes",
+    "391",
+    "A rainy afternoon is a time of day when the sky is filled with dark, heavy clouds, and the rain falls in steady sheets. The air is thick with moisture, and the ground is slick with puddles that reflect the dull, gray light of the overcast sky. The sound of raindrops hitting the pavement is",
+    "1. Cats are generally more independent than dogs, while dogs are more social and require more attention and exercise. \n2. Cats are typically more territorial than dogs, while dogs are more likely to be friendly and outgoing. \n3. Cats are generally more vocal than dogs, while dogs are more likely to be silent and",
+    "Model quantization is the process of reducing the precision of the weights and activations in a machine learning model to decrease the model size and improve inference speed.",
+    "Chinese: 好的早上 (hǎo de zǎo shàng)\nJapanese: おはようございます (ohayou gozaimasu)\nFrench: Bonjour (bonjôr)",
+    "The image depicts a dog sitting on a patterned rug. The dog has a thick, fluffy coat with a mix of white, black, and brown fur. Its ears are large and erect, and its eyes are a warm brown color. The dog is looking directly at the camera, giving the impression of a calm and",
+    "A man is holding a microphone and speaking into it.",
+    "A man is holding a microphone and speaking into it.",
+    "A man is holding a microphone and speaking to the camera.",
+    "Four men are standing around a table with microphones and papers, with a football stadium in the background.",
+    "Four men are standing around a table with microphones and papers, with a football stadium in the background.",
+    "A man is holding a microphone and talking.",
+    "A man is holding a microphone and speaking into it."
+  ],
+  "rel_err_mean": 0.079519,
+  "finished": "2026-09-30 19:56:46"
+}

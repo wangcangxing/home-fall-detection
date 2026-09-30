@@ -1,0 +1,45 @@
+{
+  "ckpt": "<ASSETS>/compress\\pruned_int4",
+  "info": {
+    "n_swapped": 308,
+    "n_rest": 224,
+    "bits": 4,
+    "group_size": 64
+  },
+  "mem_after_load": {
+    "allocated_gb": 2.945,
+    "reserved_gb": 2.994,
+    "peak_allocated_gb": 2.945,
+    "peak_reserved_gb": 2.994,
+    "total_gb": 15.902
+  },
+  "items": [
+    {
+      "kind": "text",
+      "prompt": "What is the capital of France? Answer with the city name only.",
+      "image": null,
+      "max_new_tokens": 64,
+      "prompt_tokens": 33,
+      "new_tokens": 3,
+      "gen_sec": 1.002,
+      "tok_per_s": 2.995,
+      "peak_allocated_gb": 3.064,
+      "answer": "France.",
+      "id": "text00"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe this image in detail.",
+      "image": "<PIL.Image.Image image mode=RGB size=1024x2048 at 0x242830CCDD0>",
+      "max_new_tokens": 64,
+      "prompt_tokens": 2075,
+      "new_tokens": 6,
+      "gen_sec": 2.603,
+      "tok_per_s": 2.305,
+      "peak_allocated_gb": 4.579,
+      "answer": "None of the options.",
+      "id": "img00"
+    }
+  ],
+  "finished": "2026-09-30 18:42:55"
+}

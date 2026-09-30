@@ -1,0 +1,89 @@
+{
+  "tag": "ab_layersonly",
+  "llm_drop": 6,
+  "vision_drop": 0,
+  "strategy": "uniform",
+  "ffn_keep": 1.0,
+  "started": "2026-09-30 18:28:44",
+  "load_sec": 23.2,
+  "params_before": 4741793792,
+  "gpu_before_gb": 8.833,
+  "llm_prune": {
+    "n_before": 36,
+    "n_after": 30,
+    "dropped": [
+      5,
+      10,
+      15,
+      21,
+      26,
+      31
+    ],
+    "strategy": "uniform"
+  },
+  "prune_sec": 0.0,
+  "params_after": 4136208896,
+  "param_ratio": 0.8723,
+  "gpu_after_gb": 7.705,
+  "items": [
+    {
+      "kind": "text",
+      "prompt": "What is the capital of France? Answer with the city name only.",
+      "image": null,
+      "max_new_tokens": 32,
+      "prompt_tokens": 33,
+      "new_tokens": 2,
+      "gen_sec": 0.884,
+      "tok_per_s": 2.262,
+      "peak_allocated_gb": 7.721,
+      "answer": "Paris",
+      "id": "text00"
+    },
+    {
+      "kind": "text",
+      "prompt": "Explain in three sentences why the sky is blue.",
+      "image": null,
+      "max_new_tokens": 32,
+      "prompt_tokens": 30,
+      "new_tokens": 32,
+      "gen_sec": 2.361,
+      "tok_per_s": 13.552,
+      "peak_allocated_gb": 7.724,
+      "answer": "1. The sky is blue because the sun's rays are filtered through the Earth's atmosphere. 2. The blue color is a result of the scattering of",
+      "id": "text02"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe this image in detail.",
+      "image": "<PIL.Image.Image image mode=RGB size=1024x2048 at 0x2AB7A507320>",
+      "max_new_tokens": 32,
+      "prompt_tokens": 2075,
+      "new_tokens": 32,
+      "gen_sec": 3.952,
+      "tok_per_s": 8.097,
+      "peak_allocated_gb": 9.335,
+      "answer": "The image depicts a dog with a white and gray coat, sitting on a carpet with a red and blue pattern. The dog has a black nose and a black",
+      "id": "img00"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe what is happening in this image in one sentence.",
+      "image": "<PIL.Image.Image image mode=RGB size=960x540 at 0x2AB7E442690>",
+      "max_new_tokens": 32,
+      "prompt_tokens": 542,
+      "new_tokens": 32,
+      "gen_sec": 2.423,
+      "tok_per_s": 13.209,
+      "peak_allocated_gb": 7.923,
+      "answer": "A man is holding a yellow microphone with the BBC SPORT logo and the letters \"ENG\" and \"ARG\" on it, while wearing a black shirt and a",
+      "id": "img01"
+    }
+  ],
+  "summary": {
+    "n_ok": 4,
+    "n_err": 0,
+    "mean_tok_per_s": 9.28,
+    "max_peak_allocated_gb": 9.335
+  },
+  "finished": "2026-09-30 18:29:30"
+}

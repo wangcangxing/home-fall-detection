@@ -1,0 +1,28 @@
+视频 hr_fall_detection_1.mp4: fps=30.01 frames=1511 dur=50.35s
+    时间 真值                   预期    躺倒?    有人?    理由
+  10.0 Stand                False False  True  
+  34.5 Sit(难负样本)            False False  True  
+  38.0 Stand                False False  True  
+  43.0 None                 False False  False 
+  44.5 None→fall前一刻         False False  True  
+  45.2 **Fall 开始**          True  False  True  
+  45.7 **Fall 中**           True  False  True  
+  46.2 **Fall 末/躺地**        True  True   True  
+  46.8 起身                   True  True   True  
+  47.5 Stand                False False  True  
+
+逐帧时序一致率（10 个时间点）= 8/10
+注：45-48s 是 1 秒级的短暂事件，逐帧抽查只能近似；真值本身也标注为 1 秒粒度。
+[VIDEO 0-8s 无摔倒] 16帧 2.2s -> no
+[VIDEO 37-44s 无摔倒] 16帧 2.1s -> no
+[VIDEO 41-48s 含45-46s摔倒] 16帧 2.1s -> no
+  t=10.0s lie=False per=True
+  t=34.5s lie=False per=True
+  t=38.0s lie=False per=True
+  t=43.0s lie=False per=False
+  t=44.5s lie=False per=True
+  t=45.2s lie=False per=True
+  t=45.7s lie=False per=True
+  t=46.2s lie=True per=True
+  t=46.8s lie=True per=True
+  t=47.5s lie=False per=True

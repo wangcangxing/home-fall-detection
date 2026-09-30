@@ -1,0 +1,109 @@
+{
+  "tag": "ab_mild",
+  "llm_drop": 3,
+  "vision_drop": 0,
+  "strategy": "uniform",
+  "ffn_keep": 0.9,
+  "ffn_strategy": "wanda",
+  "started": "2026-09-30 18:35:33",
+  "load_sec": 7.6,
+  "params_before": 4741793792,
+  "gpu_before_gb": 8.833,
+  "llm_prune": {
+    "n_before": 36,
+    "n_after": 33,
+    "dropped": [
+      9,
+      18,
+      27
+    ],
+    "strategy": "uniform"
+  },
+  "calib": {
+    "n_prompts": 8,
+    "sec": 1.3,
+    "prompts": [
+      "Summarize the following idea in one sentence: a small sensor wakes up a bigger model.",
+      "Name two advantages of running a neural network on a low-power chip.",
+      "What is the difference between a photograph and a video?",
+      "Write one sentence about how a camera stores images.",
+      "Give three examples of everyday objects made of metal.",
+      "Explain what a battery does, in one sentence.",
+      "List four colours in the order they appear in a rainbow.",
+      "Describe the taste of a lemon in one short sentence."
+    ]
+  },
+  "ffn": {
+    "keep_ratio": 0.9,
+    "strategy": "wanda",
+    "seed": 0,
+    "I_before": 9728,
+    "I_after": 8755,
+    "n_layers_pruned": 33
+  },
+  "prune_sec": 1.4,
+  "params_after": 4192404224,
+  "param_ratio": 0.8841,
+  "gpu_after_gb": 7.818,
+  "items": [
+    {
+      "kind": "text",
+      "prompt": "What is the capital of France? Answer with the city name only.",
+      "image": null,
+      "max_new_tokens": 48,
+      "prompt_tokens": 33,
+      "new_tokens": 2,
+      "gen_sec": 0.309,
+      "tok_per_s": 6.48,
+      "peak_allocated_gb": 7.826,
+      "answer": "Paris",
+      "id": "text00"
+    },
+    {
+      "kind": "text",
+      "prompt": "List five common household objects, one per line.",
+      "image": null,
+      "max_new_tokens": 48,
+      "prompt_tokens": 29,
+      "new_tokens": 27,
+      "gen_sec": 2.2,
+      "tok_per_s": 12.271,
+      "peak_allocated_gb": 7.828,
+      "answer": "1. A remote control\n2. A smartphone\n3. A laptop\n4. A tablet\n5. A desktop computer",
+      "id": "text01"
+    },
+    {
+      "kind": "text",
+      "prompt": "Explain in three sentences why the sky is blue.",
+      "image": null,
+      "max_new_tokens": 48,
+      "prompt_tokens": 30,
+      "new_tokens": 20,
+      "gen_sec": 1.634,
+      "tok_per_s": 12.24,
+      "peak_allocated_gb": 7.827,
+      "answer": "The sky is blue because of the way light is scattered and reflected by the Earth's atmosphere.",
+      "id": "text02"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe this image in detail.",
+      "image": "<PIL.Image.Image image mode=RGB size=1024x2048 at 0x20C14D25250>",
+      "max_new_tokens": 48,
+      "prompt_tokens": 2075,
+      "new_tokens": 6,
+      "gen_sec": 2.694,
+      "tok_per_s": 2.228,
+      "peak_allocated_gb": 9.466,
+      "answer": "A black and white dog",
+      "id": "img00"
+    }
+  ],
+  "summary": {
+    "n_ok": 4,
+    "n_err": 0,
+    "mean_tok_per_s": 8.305,
+    "max_peak_allocated_gb": 9.466
+  },
+  "finished": "2026-09-30 18:35:54"
+}

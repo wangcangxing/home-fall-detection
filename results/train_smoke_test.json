@@ -1,0 +1,11 @@
+{
+  "data": "E:\\MageVL\\dataset\\urfd_yolo\\data.yaml",
+  "model": "yolov10n.pt",
+  "epochs": 1,
+  "imgsz": 640,
+  "batch": 16,
+  "save_dir": "E:\\MageVL\\runs\\smoke_test",
+  "best_weights": "E:\\MageVL\\runs\\smoke_test\\weights\\best.pt",
+  "smoke": true,
+  "results_dict": null
+}

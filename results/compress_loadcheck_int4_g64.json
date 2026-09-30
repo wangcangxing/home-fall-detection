@@ -1,0 +1,45 @@
+{
+  "ckpt": "<ASSETS>/compress\\int4_g64",
+  "info": {
+    "n_swapped": 350,
+    "n_rest": 248,
+    "bits": 4,
+    "group_size": 64
+  },
+  "mem_after_load": {
+    "allocated_gb": 3.548,
+    "reserved_gb": 3.57,
+    "peak_allocated_gb": 3.548,
+    "peak_reserved_gb": 3.57,
+    "total_gb": 15.902
+  },
+  "items": [
+    {
+      "kind": "text",
+      "prompt": "What is the capital of France? Answer with the city name only.",
+      "image": null,
+      "max_new_tokens": 64,
+      "prompt_tokens": 33,
+      "new_tokens": 2,
+      "gen_sec": 1.108,
+      "tok_per_s": 1.805,
+      "peak_allocated_gb": 3.703,
+      "answer": "Paris",
+      "id": "text00"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe this image in detail.",
+      "image": "<PIL.Image.Image image mode=RGB size=1024x2048 at 0x1712820E630>",
+      "max_new_tokens": 64,
+      "prompt_tokens": 2075,
+      "new_tokens": 64,
+      "gen_sec": 17.513,
+      "tok_per_s": 3.654,
+      "peak_allocated_gb": 5.227,
+      "answer": "The image features a medium-sized dog with a thick, fluffy coat. The dog's fur is predominantly white with patches of black and gray, and its ears are large and erect. The dog's eyes are a striking amber color, and its nose is black. The dog is sitting upright, facing the camera directly, with",
+      "id": "img00"
+    }
+  ],
+  "finished": "2026-09-30 18:40:14"
+}

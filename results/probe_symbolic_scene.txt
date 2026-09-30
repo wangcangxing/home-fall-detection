@@ -1,0 +1,26 @@
+=== probe L：YOLO 输出的「符号化场景」示例（COCO 80 类）===
+
+--- CCTV 躺倒图 laying01.png ---
+  检出 1 个物体：
+    person 人(score=1.00, aspect=1.82, bottom=0.65, area=11.6%)
+
+--- CCTV 躺倒图 laying02.png ---
+  检出 1 个物体：
+    person 人(score=1.00, aspect=1.07, bottom=0.87, area=22.4%)
+
+--- examples/dog.jpg ---
+  检出 1 个物体：
+    dog 狗(score=0.99, aspect=0.55, bottom=0.99, area=66.0%)
+
+--- soccer 帧 100 ---
+  检出 1 个物体：
+    person 人(score=1.00, aspect=1.12, bottom=1.00, area=54.1%)
+
+--- soccer 帧 400 ---
+  检出 4 个物体：
+    person 人(score=1.00, aspect=0.38, bottom=0.99, area=16.2%)
+    person 人(score=1.00, aspect=0.51, bottom=0.99, area=21.1%)
+    person 人(score=1.00, aspect=0.52, bottom=0.62, area=6.6%)
+    person 人(score=1.00, aspect=0.63, bottom=0.66, area=6.5%)
+
+说明：这一堆「类别+几何」就是送给小 LLM 的符号化输入。语义来自检测器的类别词表，不来自任何视觉语言模型。

@@ -1,0 +1,189 @@
+{
+  "tag": "pruned_int4_all",
+  "bits": 4,
+  "group_size": 64,
+  "skip": [],
+  "n_cont": 48,
+  "continuation": " This description is written in plain English. It lists the main objects that can be seen in the picture, together with their colours, their approximate positions, and any obvious action taking place. The tone is factual, no numbers are invented, and uncertain details are left out rather than guessed.",
+  "base_model": "<ASSETS>/Mage-VL",
+  "quant_model": "<ASSETS>/compress\\pruneL30_wanda75",
+  "quant_embed": true,
+  "items": [
+    "text00",
+    "text01",
+    "text02",
+    "text03",
+    "text04",
+    "text05",
+    "text06",
+    "text07",
+    "img00",
+    "img01",
+    "img02",
+    "img03",
+    "img04",
+    "img05",
+    "img06",
+    "img07"
+  ],
+  "comparison": {
+    "n": 16,
+    "mean_kl": 1.65818,
+    "max_kl": 1.92663,
+    "mean_top1_agree": 0.3789,
+    "answer_exact_rate": 0.0,
+    "mean_answer_ratio": 0.1895,
+    "rows": [
+      {
+        "i": 0,
+        "kl": 1.87667,
+        "top1_agree": 0.4375,
+        "answer_exact": false,
+        "answer_ratio": 0.1818
+      },
+      {
+        "i": 1,
+        "kl": 1.6459,
+        "top1_agree": 0.4167,
+        "answer_exact": false,
+        "answer_ratio": 0.2804
+      },
+      {
+        "i": 2,
+        "kl": 1.57312,
+        "top1_agree": 0.4792,
+        "answer_exact": false,
+        "answer_ratio": 0.0409
+      },
+      {
+        "i": 3,
+        "kl": 1.92663,
+        "top1_agree": 0.375,
+        "answer_exact": false,
+        "answer_ratio": 0.2353
+      },
+      {
+        "i": 4,
+        "kl": 1.45054,
+        "top1_agree": 0.3542,
+        "answer_exact": false,
+        "answer_ratio": 0.1188
+      },
+      {
+        "i": 5,
+        "kl": 1.42163,
+        "top1_agree": 0.4792,
+        "answer_exact": false,
+        "answer_ratio": 0.2667
+      },
+      {
+        "i": 6,
+        "kl": 1.79421,
+        "top1_agree": 0.3958,
+        "answer_exact": false,
+        "answer_ratio": 0.4746
+      },
+      {
+        "i": 7,
+        "kl": 1.72303,
+        "top1_agree": 0.375,
+        "answer_exact": false,
+        "answer_ratio": 0.2074
+      },
+      {
+        "i": 8,
+        "kl": 1.46965,
+        "top1_agree": 0.3542,
+        "answer_exact": false,
+        "answer_ratio": 0.0347
+      },
+      {
+        "i": 9,
+        "kl": 1.64082,
+        "top1_agree": 0.3333,
+        "answer_exact": false,
+        "answer_ratio": 0.2817
+      },
+      {
+        "i": 10,
+        "kl": 1.65827,
+        "top1_agree": 0.3542,
+        "answer_exact": false,
+        "answer_ratio": 0.0556
+      },
+      {
+        "i": 11,
+        "kl": 1.68968,
+        "top1_agree": 0.3333,
+        "answer_exact": false,
+        "answer_ratio": 0.1702
+      },
+      {
+        "i": 12,
+        "kl": 1.69943,
+        "top1_agree": 0.3542,
+        "answer_exact": false,
+        "answer_ratio": 0.0272
+      },
+      {
+        "i": 13,
+        "kl": 1.70843,
+        "top1_agree": 0.3125,
+        "answer_exact": false,
+        "answer_ratio": 0.2044
+      },
+      {
+        "i": 14,
+        "kl": 1.63115,
+        "top1_agree": 0.3542,
+        "answer_exact": false,
+        "answer_ratio": 0.1702
+      },
+      {
+        "i": 15,
+        "kl": 1.62177,
+        "top1_agree": 0.3542,
+        "answer_exact": false,
+        "answer_ratio": 0.2817
+      }
+    ]
+  },
+  "base_answers": [
+    "Paris",
+    "1. Refrigerator\n2. Television\n3. Washing machine\n4. Dishwasher\n5. Vacuum cleaner",
+    "The sky appears blue because of a phenomenon called Rayleigh scattering. When sunlight enters the Earth's atmosphere, it collides with molecules and small particles in the air. Blue light is scattered in all directions by the gases and particles in the atmosphere more than other colors because the shorter the wavelength, the more the light is scattered",
+    "391",
+    "A rainy afternoon is a time of tranquility and peace. The sound of raindrops hitting the ground creates a soothing melody that calms the mind and soul. The air is filled with the scent of wet earth and the sound of raindrops on the leaves of trees. The sky is a deep shade of blue, and",
+    "1. Cats are generally more independent and solitary than dogs, while dogs are more social and require more attention and interaction from their owners.\n2. Cats are typically more agile and have a higher jumping ability than dogs, while dogs are generally more powerful and have a greater ability to run and play.\n3. Cats are generally",
+    "Model quantization is the process of reducing the precision of the weights and activations in a machine learning model to decrease its size and improve its inference speed.",
+    "Chinese: 好的早上 (hǎo de zǎo shàng)\nJapanese: おはようございます (ohayō gozaimasu)\nFrench: Bonjour",
+    "The image depicts a dog sitting on a patterned rug. The dog appears to be a Border Collie, characterized by its thick, fluffy coat with a mix of white, black, and brown fur. The dog's ears are perked up, and it is looking directly at the camera with a calm and attentive expression",
+    "A man is holding a microphone and talking.",
+    "A man holding a microphone with the BBC logo on it, standing in front of a stadium with a scoreboard showing the score of a football match.",
+    "A man is holding a microphone and talking.",
+    "Four men are standing around a table with papers and microphones, with a football stadium in the background.",
+    "Four men are standing around a table with papers and microphones, with a football stadium in the background.",
+    "A man is holding a microphone and talking.",
+    "A man is holding a microphone and talking."
+  ],
+  "quant_answers": [
+    "France",
+    "1) Toothbrushes\n2) Kitchen utensils\n3) Refrigerator\n4) Oven\n5) Glassware\n6) Utensils\n7) Glassware\n8) Utensils\n9) Oven\n10) Refrigerator",
+    "Sky is blue because it is a result of the way our eyes perceive the color of the sky. The sky is actually a shade of blue that is a result of the way our eyes perceive the color of the sky. The sky is actually a shade of blue that is a result of the way our eyes perceive the color",
+    "17 * 23 = 1511",
+    "A rainy afternoon.",
+    "1) Cats and dogs are both members of the feline family. 2) Cats and dogs are both members of the cat/dog/dog/dog/dog/dog/dog/dog/dog/dog/dog/dog/dog/dog/dog/dog/dog/dog/dog/dog",
+    "Model quantization refers to the process of quantifying a mathematical model in the form of an integer multiple of another.",
+    "Good morning translated into different languages.",
+    "<image>",
+    "None of the provided options.",
+    "None.",
+    "None.",
+    "None of the provided <image>. The image is a composite of a question mark and an answer mark, so it is a bit of a trick question mark. The mark is a bit of a trick answer mark. The mark is a bit of a trick answer mark. The mark is a bit of a trick answer mark",
+    "None of the provided <image>.",
+    "None.",
+    "None of the provided options."
+  ],
+  "rel_err_mean": 0.09203,
+  "finished": "2026-09-30 19:00:12"
+}

@@ -1,0 +1,59 @@
+{
+  "tag": "ab_ffn_first",
+  "llm_drop": 0,
+  "vision_drop": 0,
+  "strategy": "uniform",
+  "ffn_keep": 0.75,
+  "ffn_strategy": "first",
+  "started": "2026-09-30 18:30:36",
+  "load_sec": 7.4,
+  "params_before": 4741793792,
+  "gpu_before_gb": 8.833,
+  "ffn": {
+    "keep_ratio": 0.75,
+    "strategy": "first",
+    "seed": 0,
+    "I_before": 9728,
+    "I_after": 7296,
+    "n_layers_pruned": 36
+  },
+  "prune_sec": 0.1,
+  "params_after": 4069394432,
+  "param_ratio": 0.8582,
+  "gpu_after_gb": 7.582,
+  "items": [
+    {
+      "kind": "text",
+      "prompt": "What is the capital of France? Answer with the city name only.",
+      "image": null,
+      "max_new_tokens": 24,
+      "prompt_tokens": 33,
+      "new_tokens": 5,
+      "gen_sec": 0.975,
+      "tok_per_s": 5.128,
+      "peak_allocated_gb": 7.598,
+      "answer": "Sainte-Marie",
+      "id": "text00"
+    },
+    {
+      "kind": "image",
+      "prompt": "Describe this image in detail.",
+      "image": "<PIL.Image.Image image mode=RGB size=1024x2048 at 0x1CEB2BEF710>",
+      "max_new_tokens": 24,
+      "prompt_tokens": 2075,
+      "new_tokens": 24,
+      "gen_sec": 3.786,
+      "tok_per_s": 6.339,
+      "peak_allocated_gb": 9.258,
+      "answer": "The image shows a dog with a breed that appears to be a breed of breed of breed of breed of breed of breed",
+      "id": "img00"
+    }
+  ],
+  "summary": {
+    "n_ok": 2,
+    "n_err": 0,
+    "mean_tok_per_s": 5.734,
+    "max_peak_allocated_gb": 9.258
+  },
+  "finished": "2026-09-30 18:30:53"
+}

@@ -1,0 +1,12 @@
+加载成功，耗时 11.7s；dtype=torch.bfloat16；device=cuda:0
+权重显存 alloc=3.39GB reserved=3.42GB
+模块类型计数（Top 8）: [('Linear4bit', 350), ('Qwen3RMSNorm', 145), ('LayerNorm', 50), ('Qwen3DecoderLayer', 36), ('Qwen3Attention', 36), ('Qwen3MLP', 36), ('SiLUActivation', 36), ('MageVLVisionEncoderLayer', 24)]
+剩余普通 nn.Linear: 351
+[image-4bit] OK prompt=2075 peak_alloc=5.08GB gen=17.0s
+    回答: The image features a dog sitting in front of a large, ornate rug. The dog appears to be a merle Australian Shepherd, characterized by its distinctive coat pattern of black, white, and gray. The dog's fur is long and fluffy, with a mix of colors that give it a unique and striking appearance. The dog'
+    与 bf16 基线首段的相似度 = 0.647
+[video-8帧-4bit] OK prompt=4167 peak_alloc=9.14GB gen=20.8s
+    回答: The video features a sports broadcast, likely a football match, with a focus on a commentator or reporter. The scene is set in a stadium filled with spectators, and the broadcast is from BBC Sport. The commentator, a man with short hair, is wearing a black polo shirt and holding a yellow microphone 
+[video-16帧-4bit] OK prompt=8317 peak_alloc=24.24GB gen=464.5s
+    回答: The video opens with a man in a black shirt holding a yellow microphone with the BBC Sport logo, standing in front of a stadium filled with spectators. The stadium is packed, and the atmosphere is electric. The man appears to be a commentator or reporter, delivering a live broadcast. The scene then 
+[video-32帧-4bit] OOM CUDA out of memory. Tried to allocate 32.93 GiB. GPU 0 has a total capacity of 15.90 GiB of which 6.

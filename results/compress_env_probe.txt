@@ -1,0 +1,31 @@
+# 环境探针：端侧压缩工具链在 Windows / 本 venv 下的可用性
+
+时间：2026-09-30 18:14:40 +08:00
+Python：3.12.7   venv：<ASSETS>/venv
+命令：<py> -m pip install --dry-run --no-deps <pkg>   （只解析，不安装）
+
+注意：本机到 PyPI 的链路会间歇性 ConnectionReset(10054)，**同一个包两次探测可能一次 FAIL 一次 OK**。
+下表为**重试后的稳定结果**；FAIL 行附最后一次的原始错误。
+
+OK    gptqmodel          GPTQModel-7.5.0
+OK    autoawq            autoawq-0.2.9
+FAIL  llm-compressor     ERROR: No matching distribution found for llm-compressor
+OK    torchao            torchao-0.18.0
+OK    optimum            optimum-2.3.0
+OK    datasets           datasets-5.0.1
+OK    nncf               nncf-3.4.0
+OK    hqq                hqq-0.2.8.post1
+OK    compressed-tensors compressed-tensors-0.19.0
+OK    onnx               onnx-1.23.1
+OK    onnxruntime        onnxruntime-1.30.0
+
+## 结论与取舍
+
+- **有可用发行版的**：gptqmodel 7.5.0、autoawq 0.2.9、torchao 0.18.0、hqq 0.2.8、optimum 2.3.0、datasets 5.0.1、nncf 3.4.0、onnx 1.23.1、onnxruntime 1.30.0。
+  即 **GPTQ / AWQ 并非「装不上」**——第一次探测的 FAIL 是链路重置造成的假象，重试后即 OK。
+- **唯一真的没有发行版的是 llm-compressor**（No matching distribution）。
+- **真正的障碍不是安装，而是架构适配**：gptqmodel / autoawq 都要求模型类按它们的约定暴露层结构并挂接量化集成；Mage-VL 是 trust_remote_code 的**自定义架构**（`MageVLForConditionalGeneration` + 自定义 `mage_vl` modeling 代码）。能否直接套用**未验证**。
+- **torchao 0.18.0 可安装**，但其 int4 权重核依赖 Triton，Windows 上无 triton 轮子（坑点 #2）→ 装了也未必跑得动，未作为第一路线。
+- **本轮采用路线**：自研 group-wise RTN weight-only 量化（scripts/compress/quant_rtn.py，纯 PyTorch，零新依赖）；bitsandbytes 0.50.2 作对照基线。理由：先拿到**确定能跑通、可复现**的体积/延迟/精度数字，再谈更高级的量化器。
+- **下一步候选（尚未做）**：试 gptqmodel / autoawq 能否吃下自定义架构；若可行，与 RTN 比同体积下的精度。
+- **onnx / onnxruntime 有 Windows 轮子**，是后续「导出给端侧运行时」的候选。

@@ -1,0 +1,27 @@
+=== probe H：按摔倒时长分档的命中率（5 秒窗口 / 16 帧 ≈3.2fps）===
+  fall_detection_10  事件   88.0-  88.0s (时长  0.0s) 窗口87-92s -> no  漏检  3.6s
+  fall_detection_10  事件   89.0-  90.0s (时长  1.0s) 窗口88-93s -> no  漏检  3.1s
+  fall_detection_10  事件   97.0-  97.0s (时长  0.0s) 窗口96-101s -> no  漏检  3.2s
+  fall_detection_10  事件   98.0-  99.0s (时长  1.0s) 窗口97-102s -> no  漏检  3.2s
+  fall_detection_4   事件   96.0-  98.0s (时长  2.0s) 窗口95-100s -> no  漏检  3.1s
+  fall_detection_4   事件  152.0- 154.0s (时长  2.0s) 窗口151-156s -> no  漏检  3.0s
+  fall_detection_5   事件  144.0- 146.0s (时长  2.0s) 窗口143-148s -> no  漏检  3.0s
+  fall_detection_5   事件  180.0- 182.0s (时长  2.0s) 窗口179-184s -> no  漏检  3.0s
+  fall_detection_10  事件  168.0- 171.0s (时长  3.0s) 窗口167-172s -> no  漏检  3.1s
+  fall_detection_4   事件  161.0- 164.0s (时长  3.0s) 窗口160-165s -> no  漏检  3.1s
+  fall_detection_5   事件  156.0- 159.0s (时长  3.0s) 窗口155-160s -> yes 命中  3.0s
+  fall_detection_8   事件  216.0- 219.0s (时长  3.0s) 窗口215-220s -> no  漏检  3.0s
+
+按事件时长分档的命中率：
+  时长 0-2s     命中 0/4
+  时长 2-3s     命中 0/4
+  时长 3-4s     命中 1/4
+注：窗口固定 5 秒（满足「5 秒内报出来」的需求形态）。
+
+对照组（同视频、无摔倒窗口，应为 no）：
+  fall_detection_4 @20-25s -> no  正确否定
+  fall_detection_5 @30-35s -> no  正确否定
+  fall_detection_8 @50-55s -> no  正确否定
+  fall_detection_10 @20-25s -> no  正确否定
+  fall_detection_9 @20-25s -> no  正确否定
+  对照正确率 5/5

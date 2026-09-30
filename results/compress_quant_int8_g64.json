@@ -1,0 +1,3546 @@
+{
+  "tag": "int8_g64",
+  "bits": 8,
+  "group_size": 64,
+  "skip": [
+    "lm_head"
+  ],
+  "quant_embed": false,
+  "started": "2026-09-30 19:02:51",
+  "source_weights_bytes": 9483675888,
+  "model": "<ASSETS>/Mage-VL",
+  "load_sec": 7.7,
+  "quant_sec": 1.2,
+  "peak_during_quant_gb": 8.965,
+  "orig_linear_bytes": 8703049728,
+  "report": {
+    "n_quant_linear": 350,
+    "n_quant_embedding": 0,
+    "n_plain_linear": 1,
+    "quant_storage_bytes": 4210684928,
+    "remaining_plain_linear_bytes": 777912320,
+    "remaining_plain_embedding_bytes": 777912320
+  },
+  "layers": [
+    {
+      "name": "model.visual.encoder.layers.0.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.006864,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.0.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005736,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.0.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.006603,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.0.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.007047,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.1.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.00629,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.1.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005741,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.1.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.006146,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.1.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005566,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.2.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.00561,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.2.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005536,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.2.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005587,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.2.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005549,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.3.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005589,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.3.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005362,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.3.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005523,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.3.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005466,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.4.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005579,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.4.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005319,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.4.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005521,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.4.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005509,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.5.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005507,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.5.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005284,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.5.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005436,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.5.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.00553,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.6.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005445,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.6.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005283,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.6.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005411,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.6.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005529,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.7.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005472,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.7.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005273,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.7.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005421,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.7.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005479,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.8.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005406,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.8.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005277,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.8.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.00535,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.8.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005526,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.9.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005383,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.9.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005278,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.9.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005319,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.9.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005534,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.10.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005389,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.10.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005277,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.10.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005324,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.10.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005534,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.11.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005367,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.11.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005272,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.11.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005307,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.11.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005539,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.12.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005352,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.12.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005276,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.12.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005291,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.12.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005519,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.13.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005351,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.13.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005272,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.13.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.00529,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.13.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005527,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.14.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005347,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.14.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005267,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.14.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005202,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.14.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.00554,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.15.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005335,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.15.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005271,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.15.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005276,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.15.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.00556,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.16.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005327,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.16.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005272,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.16.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.00528,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.16.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005523,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.17.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.00533,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.17.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005272,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.17.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005278,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.17.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005532,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.18.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005319,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.18.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005274,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.18.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005276,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.18.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005579,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.19.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005305,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.19.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005267,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.19.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005272,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.19.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.00557,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.20.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005316,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.20.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.00527,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.20.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005269,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.20.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.00561,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.21.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005298,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.21.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005265,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.21.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.00528,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.21.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005732,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.22.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005306,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.22.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005276,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.22.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005308,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.22.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005858,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.encoder.layers.23.self_attn.qkv",
+      "kind": "linear",
+      "shape": [
+        3072,
+        1024
+      ],
+      "rel_err": 0.005307,
+      "storage_bytes": 3348480
+    },
+    {
+      "name": "model.visual.encoder.layers.23.self_attn.proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        1024
+      ],
+      "rel_err": 0.005284,
+      "storage_bytes": 1116160
+    },
+    {
+      "name": "model.visual.encoder.layers.23.mlp.fc1",
+      "kind": "linear",
+      "shape": [
+        4096,
+        1024
+      ],
+      "rel_err": 0.005312,
+      "storage_bytes": 4464640
+    },
+    {
+      "name": "model.visual.encoder.layers.23.mlp.fc2",
+      "kind": "linear",
+      "shape": [
+        1024,
+        4096
+      ],
+      "rel_err": 0.005732,
+      "storage_bytes": 4458496
+    },
+    {
+      "name": "model.visual.merger.mlp.0",
+      "kind": "linear",
+      "shape": [
+        4096,
+        4096
+      ],
+      "rel_err": 0.005271,
+      "storage_bytes": 17833984
+    },
+    {
+      "name": "model.visual.merger.mlp.2",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005271,
+      "storage_bytes": 11146240
+    },
+    {
+      "name": "model.language_model.layers.0.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005358,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.0.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.00534,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.0.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005364,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.0.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005348,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.0.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005326,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.0.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005317,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.0.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005405,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.1.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005369,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.1.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005349,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.1.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005352,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.1.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005322,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.1.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005319,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.1.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.00534,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.1.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005384,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.2.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005363,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.2.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005418,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.2.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005348,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.2.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005301,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.2.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005373,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.2.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005386,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.2.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.006546,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.3.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.00539,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.3.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.00539,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.3.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005357,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.3.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005301,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.3.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005329,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.3.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005356,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.3.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005547,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.4.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005372,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.4.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005412,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.4.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005341,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.4.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005284,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.4.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005329,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.4.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005335,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.4.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005529,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.5.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005362,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.5.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005369,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.5.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005347,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.5.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005305,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.5.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005381,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.5.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005334,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.5.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005441,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.6.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005375,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.6.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.00535,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.6.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005402,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.6.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005304,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.6.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005329,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.6.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005328,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.6.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005413,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.7.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005365,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.7.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005395,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.7.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005336,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.7.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005312,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.7.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005326,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.7.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.00532,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.7.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005363,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.8.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005361,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.8.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005343,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.8.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005333,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.8.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005301,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.8.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005311,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.8.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005325,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.8.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005396,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.9.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005414,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.9.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.00549,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.9.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.00539,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.9.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005313,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.9.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005312,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.9.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005332,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.9.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005412,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.10.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005367,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.10.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005385,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.10.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005399,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.10.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005307,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.10.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005305,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.10.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005329,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.10.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005414,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.11.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005393,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.11.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005405,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.11.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005386,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.11.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005304,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.11.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005313,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.11.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005329,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.11.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005398,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.12.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005378,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.12.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005408,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.12.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005389,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.12.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005321,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.12.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005331,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.12.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005349,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.12.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005418,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.13.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005399,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.13.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005449,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.13.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005352,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.13.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005321,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.13.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.00535,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.13.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005364,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.13.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005483,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.14.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.00536,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.14.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.00537,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.14.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005398,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.14.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005323,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.14.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005347,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.14.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005369,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.14.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005485,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.15.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005375,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.15.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005417,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.15.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005372,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.15.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005331,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.15.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005363,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.15.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005371,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.15.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005513,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.16.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005366,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.16.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005368,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.16.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005381,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.16.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005321,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.16.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005352,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.16.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005376,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.16.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005498,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.17.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.00537,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.17.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005402,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.17.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.00539,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.17.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005335,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.17.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005352,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.17.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005359,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.17.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005503,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.18.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005359,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.18.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005368,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.18.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.00537,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.18.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005328,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.18.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005371,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.18.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005373,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.18.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005524,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.19.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005391,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.19.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005432,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.19.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005374,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.19.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005356,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.19.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005383,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.19.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005382,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.19.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005536,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.20.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005377,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.20.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005432,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.20.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005408,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.20.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005329,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.20.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005358,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.20.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005354,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.20.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005503,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.21.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005381,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.21.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005411,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.21.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005425,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.21.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005343,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.21.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005384,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.21.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005352,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.21.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005496,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.22.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005361,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.22.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005489,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.22.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.00547,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.22.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005343,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.22.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005385,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.22.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005355,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.22.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005525,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.23.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005378,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.23.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005405,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.23.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005533,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.23.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005341,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.23.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005364,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.23.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005336,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.23.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.00547,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.24.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005384,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.24.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005427,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.24.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005568,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.24.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005324,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.24.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.00535,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.24.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005325,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.24.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.00542,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.25.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005343,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.25.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.00536,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.25.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005392,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.25.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005294,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.25.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005344,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.25.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005321,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.25.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005403,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.26.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005362,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.26.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005364,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.26.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005418,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.26.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005311,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.26.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005327,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.26.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005309,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.26.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005358,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.27.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005332,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.27.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005371,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.27.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005453,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.27.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005319,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.27.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005328,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.27.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005308,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.27.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005357,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.28.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005327,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.28.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005361,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.28.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005389,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.28.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.0053,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.28.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005328,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.28.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005307,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.28.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005347,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.29.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.00536,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.29.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005427,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.29.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005479,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.29.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005306,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.29.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005306,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.29.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005295,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.29.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.00531,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.30.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005357,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.30.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005387,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.30.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005448,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.30.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005305,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.30.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005306,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.30.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005295,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.30.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005312,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.31.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005356,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.31.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005412,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.31.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005446,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.31.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005313,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.31.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005305,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.31.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005298,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.31.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005307,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.32.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005385,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.32.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.0054,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.32.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005477,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.32.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005316,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.32.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005316,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.32.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005302,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.32.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005313,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.33.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005403,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.33.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.00543,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.33.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005446,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.33.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005312,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.33.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005332,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.33.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005306,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.33.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005323,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.34.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005376,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.34.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.00539,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.34.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005434,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.34.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.00532,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.34.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005332,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.34.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005309,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.34.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.0054,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.35.self_attn.q_proj",
+      "kind": "linear",
+      "shape": [
+        4096,
+        2560
+      ],
+      "rel_err": 0.005314,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.35.self_attn.k_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005342,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.35.self_attn.v_proj",
+      "kind": "linear",
+      "shape": [
+        1024,
+        2560
+      ],
+      "rel_err": 0.005388,
+      "storage_bytes": 2785280
+    },
+    {
+      "name": "model.language_model.layers.35.self_attn.o_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        4096
+      ],
+      "rel_err": 0.005318,
+      "storage_bytes": 11141120
+    },
+    {
+      "name": "model.language_model.layers.35.mlp.gate_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005329,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.35.mlp.up_proj",
+      "kind": "linear",
+      "shape": [
+        9728,
+        2560
+      ],
+      "rel_err": 0.005309,
+      "storage_bytes": 26460160
+    },
+    {
+      "name": "model.language_model.layers.35.mlp.down_proj",
+      "kind": "linear",
+      "shape": [
+        2560,
+        9728
+      ],
+      "rel_err": 0.005537,
+      "storage_bytes": 26460160
+    }
+  ],
+  "rel_err": {
+    "n": 350,
+    "mean": 0.0054,
+    "max": 0.007047,
+    "min": 0.005202
+  },
+  "mem_after_quant": {
+    "allocated_gb": 5.395,
+    "reserved_gb": 9.648,
+    "peak_allocated_gb": 8.965,
+    "peak_reserved_gb": 9.836,
+    "total_gb": 15.902
+  },
+  "saved": {
+    "dir": "<ASSETS>/compress\\int8_g64",
+    "bytes": 5768853656,
+    "gib": 5.373,
+    "ratio_vs_bf16": 0.6083
+  },
+  "finished": "2026-09-30 19:03:46"
+}

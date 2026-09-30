@@ -1,0 +1,11 @@
+=== probe J：摔倒后可检出窗口（逐秒扫描）===
+
+--- hr_fall_detection_1.mp4  标注摔倒起点=45s ---
+  42s:n 43s:n 44s:n 45s:n 46s:n 47s:n 48s:n 49s:n 50s:n
+  相对触发延迟: +-3s:n +-2s:n +-1s:n +0s:n +1s:n +2s:n +3s:n +4s:n +5s:n
+  逐秒扫描未检出任何可检出点
+
+--- hr_fall_detection_3.mp4  标注摔倒起点=205s ---
+  200s:n 201s:n 202s:n 203s:n 204s:n 205s:Y 206s:Y 207s:Y 208s:Y 209s:Y 210s:n 211s:Y 212s:Y 213s:n 214s:n
+  相对触发延迟: +-5s:n +-4s:n +-3s:n +-2s:n +-1s:n +0s:Y +1s:Y +2s:Y +3s:Y +4s:Y +5s:n +6s:Y +7s:Y +8s:n +9s:n
+  可检出点 7 个，延迟范围 0~7s（中位 3s）

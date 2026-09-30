@@ -1,0 +1,64 @@
+﻿python.exe : [transformers] You are using a model of type `mage_vl` to instantiate a model of type ``. This may be expe
+cted if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint 
+into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible
+ with the model you are instantiating.
+At line:6 char:1
++ & E:\MageVL\venv\Scripts\python.exe E:\MageVL\Mage-VL\inference.py -- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([transformers] ... instantiating.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Loading weights:   0%|          | 0/696 [00:00<?, ?it/s]
+Loading weights:   3%|��         | 23/696 [00:00<00:04, 137.43it/s]
+Loading weights:   5%|��         | 37/696 [00:00<00:06, 103.00it/s]
+Loading weights:   7%|��         | 48/696 [00:00<00:07, 85.59it/s] 
+Loading weights:   8%|��         | 57/696 [00:00<00:08, 74.29it/s]
+Loading weights:   9%|��         | 65/696 [00:00<00:09, 65.63it/s]
+Loading weights:  11%|��         | 77/696 [00:00<00:08, 74.90it/s]
+Loading weights:  13%|����        | 88/696 [00:01<00:08, 71.98it/s]
+Loading weights:  14%|����        | 98/696 [00:01<00:08, 73.70it/s]
+Loading weights:  15%|����        | 106/696 [00:01<00:08, 72.93it/s]
+Loading weights:  16%|����        | 114/696 [00:01<00:08, 67.84it/s]
+Loading weights:  18%|����        | 122/696 [00:01<00:09, 63.18it/s]
+Loading weights:  19%|����        | 129/696 [00:01<00:09, 59.32it/s]
+Loading weights:  20%|����        | 142/696 [00:01<00:08, 62.24it/s]
+Loading weights:  22%|������       | 155/696 [00:02<00:07, 68.02it/s]
+Loading weights:  24%|������       | 164/696 [00:02<00:08, 65.39it/s]
+Loading weights:  25%|������       | 175/696 [00:02<00:08, 64.19it/s]
+Loading weights:  27%|������       | 185/696 [00:02<00:07, 71.11it/s]
+Loading weights:  28%|������       | 193/696 [00:02<00:08, 60.13it/s]
+Loading weights:  29%|������       | 204/696 [00:02<00:07, 65.55it/s]
+Loading weights:  30%|������       | 211/696 [00:03<00:07, 64.02it/s]
+Loading weights:  32%|��������      | 221/696 [00:03<00:06, 70.46it/s]
+Loading weights:  33%|��������      | 229/696 [00:03<00:06, 69.42it/s]
+Loading weights:  34%|��������      | 237/696 [00:03<00:06, 66.73it/s]
+Loading weights:  35%|��������      | 244/696 [00:03<00:06, 65.41it/s]
+Loading weights:  36%|��������      | 254/696 [00:03<00:06, 64.21it/s]
+Loading weights:  38%|��������      | 264/696 [00:03<00:06, 69.14it/s]
+Loading weights:  39%|��������      | 274/696 [00:03<00:05, 72.82it/s]
+Loading weights:  41%|��������      | 282/696 [00:04<00:05, 69.90it/s]
+Loading weights:  42%|����������     | 290/696 [00:04<00:05, 68.65it/s]
+Loading weights:  43%|����������     | 297/696 [00:04<00:06, 60.93it/s]
+Loading weights:  44%|����������     | 309/696 [00:04<00:05, 65.72it/s]
+Loading weights:  46%|����������     | 320/696 [00:04<00:05, 71.76it/s]
+Loading weights:  47%|����������     | 329/696 [00:04<00:05, 72.12it/s]
+Loading weights:  48%|����������     | 337/696 [00:04<00:05, 69.53it/s]
+Loading weights:  49%|����������     | 344/696 [00:04<00:05, 66.75it/s]
+Loading weights:  50%|����������     | 351/696 [00:05<00:05, 66.67it/s]
+Loading weights:  52%|������������    | 362/696 [00:05<00:04, 72.84it/s]
+Loading weights:  53%|������������    | 370/696 [00:05<00:04, 71.14it/s]
+Loading weights:  54%|������������    | 378/696 [00:05<00:04, 69.38it/s]
+Loading weights:  55%|������������    | 386/696 [00:05<00:04, 63.76it/s]
+Loading weights:  61%|������������    | 424/696 [00:05<00:01, 138.73it/s]
+Loading weights:  68%|��������������   | 476/696 [00:05<00:00, 230.97it/s]
+Loading weights:  76%|����������������  | 532/696 [00:05<00:00, 307.80it/s]
+Loading weights:  85%|������������������ | 594/696 [00:06<00:00, 389.67it/s]
+Loading weights:  93%|��������������������| 645/696 [00:06<00:00, 421.73it/s]
+Loading weights:  99%|��������������������| 690/696 [00:06<00:00, 418.76it/s]
+Loading weights: 100%|��������������������| 696/696 [00:06<00:00, 111.57it/s]
+[transformers] The remote code model you are currently using seems to expect `cache_position`. This arg has been remove
+d from the Transformers library, and will stop being created in `generate` even for remote code models in a future rele
+ase. Please open a PR on the remote code hub repo to remove any usage of `cache_position`.
+The image depicts a dog sitting on a patterned rug. The dog appears to be a Border Collie, characterized by its thick, fluffy coat with a mix of white, black, and brown fur. The dog's ears are perked up, and it is looking directly at the camera with a calm and attentive expression. The background features a large, ornate rug with intricate patterns and a rich color palette, primarily in shades of red, blue, and beige. The lighting in the image is soft and natural, suggesting that the photo was taken during the day with sunlight filtering into the room. The overall atmosphere of the image is warm and inviting, with the dog's presence adding a sense of companionship and comfort.
+=== exit=0 elapsed_sec=38.1 ===

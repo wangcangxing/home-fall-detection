@@ -1,0 +1,189 @@
+{
+  "tag": "int4_all",
+  "bits": 4,
+  "group_size": 64,
+  "skip": [],
+  "n_cont": 48,
+  "continuation": " This description is written in plain English. It lists the main objects that can be seen in the picture, together with their colours, their approximate positions, and any obvious action taking place. The tone is factual, no numbers are invented, and uncertain details are left out rather than guessed.",
+  "base_model": "<ASSETS>/Mage-VL",
+  "quant_model": "<ASSETS>/Mage-VL",
+  "quant_embed": true,
+  "items": [
+    "text00",
+    "text01",
+    "text02",
+    "text03",
+    "text04",
+    "text05",
+    "text06",
+    "text07",
+    "img00",
+    "img01",
+    "img02",
+    "img03",
+    "img04",
+    "img05",
+    "img06",
+    "img07"
+  ],
+  "comparison": {
+    "n": 16,
+    "mean_kl": 0.11251,
+    "max_kl": 0.12292,
+    "mean_top1_agree": 0.8216,
+    "answer_exact_rate": 0.125,
+    "mean_answer_ratio": 0.5716,
+    "rows": [
+      {
+        "i": 0,
+        "kl": 0.11181,
+        "top1_agree": 0.7917,
+        "answer_exact": true,
+        "answer_ratio": 1.0
+      },
+      {
+        "i": 1,
+        "kl": 0.10605,
+        "top1_agree": 0.875,
+        "answer_exact": false,
+        "answer_ratio": 0.6923
+      },
+      {
+        "i": 2,
+        "kl": 0.10603,
+        "top1_agree": 0.7708,
+        "answer_exact": false,
+        "answer_ratio": 0.1768
+      },
+      {
+        "i": 3,
+        "kl": 0.11792,
+        "top1_agree": 0.8125,
+        "answer_exact": true,
+        "answer_ratio": 1.0
+      },
+      {
+        "i": 4,
+        "kl": 0.11378,
+        "top1_agree": 0.6875,
+        "answer_exact": false,
+        "answer_ratio": 0.0427
+      },
+      {
+        "i": 5,
+        "kl": 0.09155,
+        "top1_agree": 0.8542,
+        "answer_exact": false,
+        "answer_ratio": 0.0932
+      },
+      {
+        "i": 6,
+        "kl": 0.10161,
+        "top1_agree": 0.8125,
+        "answer_exact": false,
+        "answer_ratio": 0.5354
+      },
+      {
+        "i": 7,
+        "kl": 0.10009,
+        "top1_agree": 0.8125,
+        "answer_exact": false,
+        "answer_ratio": 0.6381
+      },
+      {
+        "i": 8,
+        "kl": 0.10663,
+        "top1_agree": 0.75,
+        "answer_exact": false,
+        "answer_ratio": 0.2037
+      },
+      {
+        "i": 9,
+        "kl": 0.12099,
+        "top1_agree": 0.8542,
+        "answer_exact": false,
+        "answer_ratio": 0.4198
+      },
+      {
+        "i": 10,
+        "kl": 0.12237,
+        "top1_agree": 0.8542,
+        "answer_exact": false,
+        "answer_ratio": 0.8485
+      },
+      {
+        "i": 11,
+        "kl": 0.12292,
+        "top1_agree": 0.8542,
+        "answer_exact": false,
+        "answer_ratio": 0.4198
+      },
+      {
+        "i": 12,
+        "kl": 0.11792,
+        "top1_agree": 0.8542,
+        "answer_exact": false,
+        "answer_ratio": 0.5638
+      },
+      {
+        "i": 13,
+        "kl": 0.11821,
+        "top1_agree": 0.8542,
+        "answer_exact": false,
+        "answer_ratio": 0.9057
+      },
+      {
+        "i": 14,
+        "kl": 0.12128,
+        "top1_agree": 0.8333,
+        "answer_exact": false,
+        "answer_ratio": 0.9024
+      },
+      {
+        "i": 15,
+        "kl": 0.12106,
+        "top1_agree": 0.875,
+        "answer_exact": false,
+        "answer_ratio": 0.7033
+      }
+    ]
+  },
+  "base_answers": [
+    "Paris",
+    "1. Refrigerator\n2. Television\n3. Washing machine\n4. Dishwasher\n5. Vacuum cleaner",
+    "The sky appears blue because of a phenomenon called Rayleigh scattering. When sunlight enters the Earth's atmosphere, it collides with molecules and small particles in the air. Blue light is scattered in all directions by the gases and particles in the atmosphere more than other colors because the shorter the wavelength, the more the light is scattered",
+    "391",
+    "A rainy afternoon is a time of tranquility and peace. The sound of raindrops hitting the ground creates a soothing melody that calms the mind and soul. The air is filled with the scent of wet earth and the sound of raindrops on the leaves of trees. The sky is a deep shade of blue, and",
+    "1. Cats are generally more independent and solitary than dogs, while dogs are more social and require more attention and interaction from their owners.\n2. Cats are typically more agile and have a higher jumping ability than dogs, while dogs are generally more powerful and have a greater ability to run and play.\n3. Cats are generally",
+    "Model quantization is the process of reducing the precision of the weights and activations in a machine learning model to decrease its size and improve its inference speed.",
+    "Chinese: 好的早上 (hǎo de zǎo shàng)\nJapanese: おはようございます (ohayō gozaimasu)\nFrench: Bonjour",
+    "The image depicts a dog sitting on a patterned rug. The dog appears to be a Border Collie, characterized by its thick, fluffy coat with a mix of white, black, and brown fur. The dog's ears are perked up, and it is looking directly at the camera with a calm and attentive expression",
+    "A man is holding a microphone and talking.",
+    "A man holding a microphone with the BBC logo on it, standing in front of a stadium with a scoreboard showing the score of a football match.",
+    "A man is holding a microphone and talking.",
+    "Four men are standing around a table with papers and microphones, with a football stadium in the background.",
+    "Four men are standing around a table with papers and microphones, with a football stadium in the background.",
+    "A man is holding a microphone and talking.",
+    "A man is holding a microphone and talking."
+  ],
+  "quant_answers": [
+    "Paris",
+    "1. Refrigerator\n2. Microwave oven\n3. Dishwasher\n4. Toaster\n5. Vacuum cleaner",
+    "The sky appears blue because the Earth's atmosphere scatters sunlight in all directions. The molecules in the atmosphere scatter the shorter wavelengths of light, such as blue and violet, more than the longer wavelengths, such as red and orange. This scattering effect is known as Rayleigh scattering, and it is why the sky appears blue",
+    "391",
+    "The rain falls in a steady rhythm, creating a soothing background noise as it taps against the windowpane. The air is filled with the scent of wet earth and the distant sound of thunder echoes in the distance. The streets are slick and reflective, with puddles forming and glistening in the fading light of the afternoon sun",
+    "1. Size: Dogs are generally larger than cats, with some breeds being quite large and others being small. Cats are typically smaller and more compact in size.\n\n2. Temperament: Dogs are often seen as more outgoing and social animals, while cats are more independent and laid-back. Dogs tend to be more active and",
+    "Model quantization is the process of reducing the precision of the weights and activations in a neural network to decrease the model size and improve inference speed while maintaining a high level of accuracy.",
+    "'Good morning' in Chinese is '早上好' (shàngzǎo hǎo), in Japanese is 'おはようございます' (ohayō gozaimasu), and in French is 'bonjour'.",
+    "The image depicts a medium-sized dog with a thick, fluffy coat that is primarily white with black and gray patches. The dog's ears are large and erect, and its eyes are a warm, amber color. The dog is sitting upright and facing the camera directly, giving the impression of a calm and attentive demeanor. The",
+    "A man holding a microphone with the BBC Sport logo on it, standing in front of a stadium with a crowd in the background.",
+    "A man holding a microphone with the BBC Sport logo on it, standing in front of a stadium with a scoreboard in the background.",
+    "A man holding a microphone with the BBC Sport logo on it, standing in front of a stadium with a crowd in the background.",
+    "four men in a studio with a microphone and a table with papers and a phone on it",
+    "Four men are standing in front of a table with papers and microphones, with a stadium in the background.",
+    "A man holding a microphone and speaking.",
+    "A man holding a microphone with a BBC logo on it."
+  ],
+  "rel_err_mean": 0.091959,
+  "finished": "2026-09-30 18:57:50"
+}

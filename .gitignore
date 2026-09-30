@@ -1,0 +1,51 @@
+# 本地留痕报告：只存本地，不入库
+执行报告-*.md
+
+# ===== 数据与模型（体积大，且各有自己的许可，绝不入库）=====
+data/
+datasets/
+models/
+eval/
+*.pkl
+*.safetensors
+*.gguf
+*.mp4
+*.avi
+*.tar
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# ===== 训练产物 =====
+runs/
+weights/
+*.pt
+*.onnx
+*.rknn
+
+# ===== 编辑器 / 系统 =====
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# ===== 设计文档：只存本地，不入库 =====
+设计-*.md
+评审-*.md
+results/docx_text.txt
+
+# ===== 跌倒检测方向（已停用）的遗留结果与脚本：只存本地，不入库 =====
+# 2026-09-30 曾用 `git add results/` 误把 42 个遗留结果提交并推送，
+# 其中 probe_trigger_gate_* 含传感器架构措辞（PIR/毫米波/Wi-Fi CSI/L0-L3/仲裁），已撤销提交。
+results/probe_*
+results/eval_posture_*
+results/train_urfd_*
+scripts/probe_*.py
+scripts/batch_*.ps1
+scripts/build_domain_yolo.py
+scripts/build_mixed_yolo.py

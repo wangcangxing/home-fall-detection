@@ -1,0 +1,15 @@
+出厂 longest_edge=4000000 shortest_edge=3136 vp=(200704, 1605632)
+
+[8帧-出厂4000000] OK  实际帧数=8 prompt=4167 (521/帧) peak_alloc=14.56GB peak_res=15.12GB gen=22.5s 相似度=1.000
+    回答: The video features a sports broadcast, likely from a soccer match, as indicated by the presence of a soccer field and players in the background. The broadcast is from BBC Sport, as shown by the logo on the microphone and the screen. The score displayed is Engl
+[8帧-150k] OK  实际帧数=8 prompt=1239 (155/帧) peak_alloc=9.56GB peak_res=9.67GB gen=6.5s 相似度=0.142
+    回答: The video opens with a man in a black shirt holding a yellow BBC Sport microphone, standing in a stadium filled with spectators. The scoreboard in the bottom left corner shows the score as England 1, Argentina 2, with the match taking place in full time. The m
+[16帧-150k] OK  实际帧数=16 prompt=2461 (154/帧) peak_alloc=11.08GB peak_res=11.40GB gen=9.6s 相似度=0.180
+    回答: The video opens with a man in a black polo shirt holding a yellow BBC Sport microphone, standing in a stadium filled with spectators. The scoreboard in the bottom left corner shows the score as England 1, Argentina 2, with the match taking place in full time. 
+[32帧-150k] OK  实际帧数=32 prompt=4909 (153/帧) peak_alloc=16.57GB peak_res=17.14GB gen=51.3s 相似度=0.120
+    回答: The video opens with a BBC Sport presenter standing in a stadium, holding a yellow microphone. The scoreboard in the bottom left corner shows England leading Argentina 1-2. The presenter, dressed in a black shirt, speaks into the microphone while wearing a hea
+[32帧-64k] OK  实际帧数=32 prompt=1901 (59/帧) peak_alloc=10.28GB peak_res=10.48GB gen=8.2s 相似度=0.115
+    回答: The video opens with a man in a black shirt holding a yellow microphone with the BBC logo, standing in a stadium filled with spectators. The scene then transitions to a group of four men, each holding a yellow BBC microphone, standing around a table with the B
+[64帧-64k] OK  实际帧数=64 prompt=3789 (59/帧) peak_alloc=13.65GB peak_res=14.02GB gen=14.1s 相似度=0.052
+    回答: The video opens with a man in a black shirt holding a yellow microphone with the BBC logo, standing in front of a stadium filled with spectators. The scene transitions to a wider shot revealing four men standing around a table, each holding a yellow BBC microp
+[64帧-150k] OOM  CUDA out of memory. Tried to allocate 11.46 GiB. GPU 0 has a total capacity of 15.90 GiB of which 0 
